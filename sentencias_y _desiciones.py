@@ -1,20 +1,6 @@
-def quicksort(arr):
-    # caso de base
-    if len(arr) <= 1:
-        return arr
-    
-    # elegir pivote 
-    pivote = arr[len(arr) // 2]
-    
-    menores = [x for x in arr if x < pivote]
-    iguales = [x for x in arr if x == pivote]
-    mayores = [x for x in arr if x > pivote]
-    
-    # llamada recursivas
-    return quicksort(menores) + iguales + quicksort(mayores)
+from algorit import quicksort
 
 # sentencias
-
 def pruebas_cobertura_sentencias():
     print("Pruebas de Cobertura de Sentencias")
     
@@ -36,9 +22,7 @@ def pruebas_cobertura_sentencias():
     print(" Cobertura de sentencias completada\n")
 
 
-
-# desiciones
-
+# decisiones
 def pruebas_cobertura_decisiones():
     print("Pruebas de Cobertura de Decisiones")
     
